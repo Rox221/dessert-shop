@@ -1,0 +1,261 @@
+body{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container{
+  max-width: 1500px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+.nav-bg{
+  background-image: url('nav-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center 1%;
+  height: 150px;
+}
+.links{
+  font-family: 'Varela Round' , sans-serif;
+  color: #965a3e;
+  align-items: center;
+}
+.links li a{
+  padding-right: 15px;
+}
+.btn-cart{
+  background-color:#fe7f9c ;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.fa-shopping-cart{
+  color: #fffafa;
+}
+.home{
+  height: 30%;
+}
+.title{
+  background-image: url('dessert-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 20px;
+  width: 100%;
+}
+.title h2{
+  color: #eb96aa;
+  font-family: 'Courgette', sans-serif;
+}
+.title h3{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.circle{
+  background-color: #fcf5c7;
+}
+.cupcake-title{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  white-space: nowrap;
+  
+}
+.donut-title{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  white-space: nowrap;
+  padding-left: 67px;
+}
+.ic-title{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  white-space: nowrap;
+  padding-left: 120px;
+}
+.mc-title{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  white-space: nowrap;
+  padding-left: 185px;
+}
+.menu h3{
+  color: #eb96aa;
+  font-family: 'Courgette', sans-serif;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.image-item {
+  position: relative;
+  background-color: #ffe5ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; 
+  width: 10rem;
+  height: 11rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0%); /*horizontally and vertically center the img */
+}
+.item-name{
+  padding-top: 70px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.price{
+  padding-top: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 600;
+  color: #f26b84;
+}
+.addToCartBtn{
+  background-color:#eb96aa ;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-family: 'Comfortaa', sans-serif;
+  position: absolute;
+  margin-top: auto;
+}
+
+
+/* Hide the button by default */
+.hidden {
+  display: none;
+}
+
+/* Apply a fading effect */
+.fade-out {
+  opacity: 1;
+  animation: flipOut 0.5s ease-in-out forwards;
+}
+
+/* Define the keyframe animation for flip */
+@keyframes flipOut {
+  0% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: perspective(400px) rotateY(90deg);
+  }
+  100%{
+    opacity: 1;
+    transform: perspective(400px) rotateY(0);
+  }
+}
+
+.fade-out p, .fade-out img {
+  opacity: 0;
+}
+.about-title{
+  color: #eb96aa;
+  font-family: 'Courgette', sans-serif;
+}
+.about-details{
+  color: #965a3e;
+  font-family: 'Comfortaa', sans-serif;
+}
+.about-img{
+  background-image: url('dessert img.jpg');
+  background-repeat: no-repeat;
+}
+.footer{
+  background-image: url('footer-img.jpg');
+  background-position: center 13%;
+}
+.footer-text{
+  font-size: 16px;
+  color: #965a3e;
+  font-family: 'Varela Round', sans-serif;
+}
+.footer-icon{
+  color: #f36b84;
+}
+.txt-box-container{
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+.txt-box{
+  border-radius: 6px;
+  font-family: 'Varela Round', sans-serif;
+  outline: none;
+  color: black;
+}
+
+.btn-submit{
+  background-color: #f36b84;
+  padding: 4px 9px;
+  border-radius: 8px;
+  font-family: 'Varela Round', sans-serif;
+}
+.txt-box, .btn-submit{
+  margin-left: 5px; /* Add space between textbox and button */
+}
+@media only screen and (min-width:768px){
+  .nav-bg{
+    height: 180px;
+    background-position: center 45%;
+  }
+  .logo{
+    padding-left: 30px;
+  }
+  .nav-right{
+    padding-right: 100px;
+  }
+  .links li a{
+    padding-right: 40px;
+  }
+  .home{
+    height: 20%;
+  }
+  .title h2{
+   padding-left: 30px;
+   font-size: 50px;
+  }
+  .title h3{
+    margin-left: 250px;
+  }
+  .items{
+    margin-left: 220px;
+  }
+  .cupcake-title{
+    font-size: 11px;
+  }
+  .donut-title{
+    font-size: 11px;
+    padding-left: 90px;
+  }
+  .ic-title{
+    font-size: 11px;
+    padding-left: 165px;
+  }
+  .mc-title{
+    font-size: 11px;
+    padding-left: 250px;
+  }
+  .image-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about{
+    height: 23%;
+  }
+}
