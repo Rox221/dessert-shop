@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet"  type="text/css" href="dessert.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+<body class="bg-white-100 h-screen">
+  <div class="container h-screen">
+  <nav class="nav-bg flex justify-between items-center bg-cover p-4">
+    <div>
+      <img src="Dessert-logo.png" class="logo h-8">
+    </div>
+   <div class="nav-right flex pr-4">
+    <ul class="links flex space-x-5">
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+      <button class="btn-cart text-white font-bold flex items-center w-10">
+        <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+  </nav>
+  
+  <section class="home bg-cover bg-center h-64 flex pl-5">
+    <div class="title bg-center bg-contain md:bg-contain lg:bg-contain">
+      <h2 class="text-3xl font-bold">Welcome to <br> the sweetest place!</h2>
+      <h3 class="mt-8 text-md p-3 md:p-6 lg:p-10 lg:ml-16 italic"><b>Choose your sweets</b></h3>
+      <div class="items flex">
+        <div class="circle flex justify-center items-center w-12 h-12 rounded-full overflow-hidden mr-3 lg:mr-9">
+        <img src="cupcake-logo.png" class="capcake w-8 h-8 object-cover">
+        </div>
+        <p class="cupcake-title absolute pt-14">Cupcakes</p>
+        <div class="circle flex justify-center items-center w-12 h-12 rounded-full overflow-hidden mr-3 lg:mr-9">
+        <img src="donut-logo.png" class="donut w-8 h-8 object-cover">
+        </div>
+        <p class="donut-title absolute pt-14">Donuts</p>
+        <div class="circle flex justify-center items-center w-12 h-12 rounded-full overflow-hidden mr-3 lg:mr-9">
+        <img src="ice-cream-logo.png" class="ic w-9 h-9 object-cover">
+        </div>
+        <p class="ic-title absolute pt-14">Ice-creams</p>
+        <div class="circle flex justify-center items-center w-12 h-12 rounded-full overflow-hidden mr-3 lg:mr-9">
+        <img src="macaron-logo.png" class="ic w-9 h-9 object-cover">
+        </div>
+        <p class="mc-title absolute pt-14">Macarons</p>
+      </div>
+    </div>
+  </section>
+  <section class="menu pt-14" id="menu">
+    <h3 class="text-center font-bold text-xl"> Featured Products</h3>
+  <div class="image-grid pt-20 ml-8 lg:ml-16" id="imageGrid">
+    <div class="image-item">
+      <img src="cupcake1.png" class="menu-item w-24">
+      <p class="item-name">Oreo Cupcake</p>
+      <p class="price"> $49.5</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="donut1.png" class="menu-item w-24">
+      <p class="item-name">Raspberry Donut</p>
+      <p class="price"> $25.0</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="ic1.png" class="menu-item w-24">
+      <p class="item-name text-xs mt-4">Neapolitan Ice-cream</p>
+      <p class="price"> $48.2</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="donut2.png" class="menu-item w-24">
+       <p class="item-name text-xs mt-4">Choco Cheesy Donut</p>
+      <p class="price"> $40.7</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="ic3.png" class="menu-item w-12">
+       <p class="item-name text-xs mt-4">Strawberry Cone</p>
+      <p class="price"> $18.4</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>  
+    <div class="image-item">
+      <img src="macaron2.png" class="menu-item w-24">
+       <p class="item-name text-xs mt-4">Buttercream Macarons</p>
+      <p class="price"> $45.9</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="cupcake2.png" class="menu-item w-24">
+       <p class="item-name mt-2">Cherry Cupcake</p>
+      <p class="price"> $35.1</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+    <div class="image-item">
+      <img src="macaron3.png" class="menu-item w-24">
+       <p class="item-name text-xs mt-4">Colorful Macarons</p>
+      <p class="price"> $49.6</p>
+      <button class="hidden addToCartBtn text-sm">Add To Cart <i class="fa fa-shopping-cart sm:pr-1 pt-1"></i> </button>
+    </div>
+  </div>
+ </section>
+ <section class="about bg-cover bg-center h-100 flex pt-3" id="about">
+   <div class="about-img bg-center bg-cover">
+   <h3 class="about-title text-2xl font-bold text-right mt-2 mr-8 lg:mr-44 lg:mt-12">Dessert Chronicles</h3>
+   <p class="about-details pt-4 ml-auto mr-8 mb-4 w-1/2 lg:ml-auto lg:mr-10 lg:mt-4 text-justify"> DESSERTS OPEN DOORS,HEARTS + CONVERSATIONS. Luscious desserts with wholesome ingredients you'll feel good about; always free of all-things artificial. More than just desserts, we aim to create moments of bliss, whether it's a small everyday delight or a centerpiece of your special celebration.Our commitment to quality, creativity, and unparalleled taste guides everything we do.</p>
+   </div>
+ </section>
+  <!-- Footer -->
+  <footer class="footer text-white py-8">
+    <p class="footer-text mt-6 ml-6 pb-2"> Join the sweet club </p>
+    <i class="footer-icon fa-brands fa-facebook ml-6"></i>
+    <i class="footer-icon fa-brands fa-instagram pl-2"></i>
+    <i class="footer-icon fa-brands fa-twitter pl-2"></i>
+    <i class="footer-icon fa-brands fa-linkedin pl-2"></i>
+    <p class="footer-text text-right mr-10 lg:mr-20">Get Email Updates</p>
+    <div class="txt-box-container pt-2">
+    <input type="text" placeholder="Your email here" class="txt-box pl-2">
+    <span><button type="submit" class="btn-submit text-sm mr-4">Enter</button></span>
+    </div>
+    <p class="footer-text text-center pt-4 text-xs">&copy; Dessert Shop</p>
+  </footer>
+  </div>
+  <script src="dessert.js"></script>
+</body>
+</html>
