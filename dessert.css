@@ -177,6 +177,7 @@ body{
 .about-img{
   background-image: url('dessert img.jpg');
   background-repeat: no-repeat;
+  height: 550px;
 }
 .footer{
   background-image: url('footer-img.jpg');
