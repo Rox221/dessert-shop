@@ -28,11 +28,13 @@ var asyncImages = document.querySelectorAll('.async-image');
 
 function loadImageAsync(img) {
     var imagePath = img.dataset.src;
+    console.log('Attempting to load image: ' + imagePath);
+    
     var tempImg = new Image();
     tempImg.src = imagePath;
     tempImg.onload = function() {
         img.src = imagePath;
-        // No need for console.log if you don't want it
+        console.log('Image loaded successfully: ' + imagePath);
     };
     tempImg.onerror = function() {
         console.error('Error loading image: ' + imagePath);
@@ -43,3 +45,4 @@ function loadImageAsync(img) {
 asyncImages.forEach(function(img) {
     loadImageAsync(img);
 });
+      
