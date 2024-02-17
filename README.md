@@ -1,4 +1,4 @@
 # Online Dessert Shop
 
 ## Website Link
-https://rox221.github.io/dessert/
+https://rox221.github.io/dessert-shop/
